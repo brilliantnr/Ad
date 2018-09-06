@@ -23,7 +23,7 @@ public class Login extends AppCompatActivity {
         Context this_ = Login.this;
 
 
-        findViewById(R.id.moveList).setOnClickListener(
+        findViewById(R.id.loginBtn).setOnClickListener(
                 (View v)->{
                     ItemExist exist = new ItemExist(this_);
                     EditText x = findViewById(R.id.inputID);

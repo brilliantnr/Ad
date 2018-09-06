@@ -18,16 +18,18 @@ public class Main extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         Context this_=Main.this;
-        findViewById(R.id.createDB).setOnClickListener(
+        findViewById(R.id.next_btn).setOnClickListener(
                 (View v)->{
                     SQLiteHelper helper=new SQLiteHelper(this_);
-                }
-        );
-        findViewById(R.id.moveLogin).setOnClickListener(
-                (View v)->{
+                    //이거 옮김
                     startActivity(new Intent(this_,Login.class));
                 }
         );
+/*        findViewById(R.id.moveLogin).setOnClickListener(
+                (View v)->{
+
+                }
+        );*/
     }
     //DB 만들기
     //생체정보로 뚫고 온거라 보안 신경안쓰고 static
